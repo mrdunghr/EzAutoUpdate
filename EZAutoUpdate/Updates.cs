@@ -53,7 +53,7 @@ namespace EZAutoUpdate
                 int bytesDownloaded = 0;
                 const int chunkSize = 1024; // Kích thước mỗi đoạn download
 
-                File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, "ok.exe"), responseData);
+                File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, fileName), responseData);
                 Console.WriteLine("Thành công");
             }
             else

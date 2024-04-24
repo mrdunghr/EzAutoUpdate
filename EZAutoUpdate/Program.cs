@@ -20,6 +20,7 @@ namespace EZAutoUpdate
 
             //Process.Start("notepad.exe");// ver 1
             Process.Start("chrome.exe");// ver 2
+
         }
     }
 }

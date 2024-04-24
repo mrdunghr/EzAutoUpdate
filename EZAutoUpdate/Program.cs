@@ -16,10 +16,10 @@ namespace EZAutoUpdate
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            //Updates.AutoUpdate();
+            Updates.AutoUpdate();
 
-            Process.Start("notepad.exe");// ver 1
-            //Process.Start("chrome.exe");// ver 2
+            //Process.Start("notepad.exe");// ver 1
+            Process.Start("chrome.exe");// ver 2
         }
     }
 }

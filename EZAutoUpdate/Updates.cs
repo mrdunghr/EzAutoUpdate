@@ -11,10 +11,10 @@ namespace EZAutoUpdate
 {
     public class Updates
     {
-        public const string linkJsonVersion = "https://raw.githubusercontent.com/Ja-Sa-La/League-Account-Manager/master/Version";
+        public const string linkJsonVersion = "https://raw.githubusercontent.com/mrdunghr/EzAutoUpdate/master/Version.json";
 
-        public const string linkProject = "https://github.com/Ja-Sa-La/League-Account-Manager";
-        public const string fileName = "League_Account_Manager.exe";
+        public const string linkProject = "https://github.com/mrdunghr/EzAutoUpdate";
+        public const string fileName = "EzAutoUpdate.exe";
         public const string linkDownloadReleases = linkProject + "/releases/latest/download/" + fileName;
 
         public static string getNewVersion(string linkJsonVersion)
@@ -53,7 +53,7 @@ namespace EZAutoUpdate
                 int bytesDownloaded = 0;
                 const int chunkSize = 1024; // Kích thước mỗi đoạn download
 
-                File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, fileName), responseData);
+                File.WriteAllBytes(Path.Combine(Environment.CurrentDirectory, "ok.exe"), responseData);
                 Console.WriteLine("Thành công");
             }
             else
